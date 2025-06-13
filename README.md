@@ -1,6 +1,8 @@
 # 🧠 Mental Health Prediction for Tech Workers
 
-This project uses machine learning to predict the likelihood of mental health disorders among tech workers, using the OSMI (Open Sourcing Mental Illness) Mental Health in Tech Survey dataset. It aims to raise awareness and assist in early identification of mental health concerns based on workplace and personal factors.
+This project uses machine learning to predict the likelihood of mental health disorders among tech workers, based on responses from the OSMI (Open Sourcing Mental Illness) Mental Health in Tech Survey dataset. It aims to raise awareness and assist in early identification of mental health concerns by analyzing workplace and personal factors.
+
+In addition to the machine learning model, the project features a **Flask-based web application** with a user-friendly questionnaire. Users can fill out the form with details, and the trained model will predict the likelihood of a mental health condition based on their inputs. This interactive website bridges machine learning with real-world usability, making the model accessible for practical use.
 
 ---
 
