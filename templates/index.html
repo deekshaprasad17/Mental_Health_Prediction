@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Depression Prediction Questionnaire</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+
+        form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 30px auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #34495e;
+            font-weight: 500;
+        }
+
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccd1d9;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="number"]:focus,
+        select:focus {
+            border-color: #5a67d8;
+            background-color: #ffffff;
+            outline: none;
+        }
+
+        button {
+            margin-top: 30px;
+            background-color: #5a67d8;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #434190;
+        }
+
+        /* Add some responsiveness */
+        @media (max-width: 640px) {
+            form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Depression Prediction Questionnaire</h2>
+    <form action="/predict" method="post">
+        <label for="self_employed">Are you self-employed?</label>
+        <select name="self_employed" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="company_size">How many employees does your company have?</label>
+        <select name="company_size" required>
+            <option value="">Select</option>
+            <option value="1-5">1-5</option>
+            <option value="6-25">6-25</option>
+            <option value="26-100">26-100</option>
+            <option value="100-500">100-500</option>
+            <option value="500-1000">500-1000</option>
+            <option value="More than 1000">More than 1000</option>
+        </select>
+
+        <label for="tech_company">Is your employer primarily a tech company?</label>
+        <select name="tech_company" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="role_tech">Is your primary role related to tech/IT?</label>
+        <select name="role_tech" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+
+        <label for="mh_benefits">Does your employer provide mental health benefits?</label>
+        <select name="mh_benefits" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Don't know">Don't know</option>
+        </select>
+
+        <label for="mh_coverage">Do you know the options for mental health care under your employer coverage?</label>
+        <select name="mh_coverage" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Not sure">Not sure</option>
+        </select>
+
+        <label for="employer_discussion">Has your employer formally discussed mental health?</label>
+        <select name="employer_discussion" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Don't know">Don't know</option>
+        </select>
+
+        <label for="employer_resources">Does your employer offer resources for mental health?</label>
+        <select name="employer_resources" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Don't know">Don't know</option>
+        </select>
+
+        <label for="anonymity">Is your anonymity protected if you use mental health resources?</label>
+        <select name="anonymity" required>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Don't know">Don't know</option>
+        </select>
+
+        <label for="leave_difficulty">If a mental health issue prompted you to request medical leave, how easy would it be to ask for that leave?</label>
+        <select name="leave_difficulty" required>
+            <option value="">Select</option>
+            <option value="Very easy">Very easy</option>
+            <option value="Somewhat easy">Somewhat easy</option>
+            <option value="Neither easy nor difficult">Neither easy nor difficult</option>
+            <option value="Somewhat difficult">Somewhat difficult</option>
+            <option value="Very difficult">Very difficult</option>
+        </select>
+
+        <label for="age">What is your age?</label>
+        <input type="number" name="age" required min="10" max="100">
+
+        <label for="gender">What is your gender?</label>
+        <select name="gender" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Non-binary/third gender">Non-binary/third gender</option>
+            <option value="Prefer to self-describe">Prefer to self-describe</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

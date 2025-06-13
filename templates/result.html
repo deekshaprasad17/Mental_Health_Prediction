@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #80deea);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        h2 {
+            color: #006064;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            background-color: #ffffff;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+        }
+
+        a {
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #006064;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <h2>Prediction Result:</h2>
+    <p>{{ prediction }}</p>
+    <a href="/">Back to Questionnaire</a>
+</body>
+</html>

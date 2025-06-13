@@ -1,0 +1,550 @@
+{
+    "accuracies": {
+        "Logistic Regression": 0.704225352112676,
+        "Random Forest": 0.676056338028169,
+        "SVM": 0.6901408450704225,
+        "XGBoost": 0.7605633802816901,
+        "Decision Tree": 0.5915492957746479,
+        "Neural Network": 0.6338028169014085,
+        "Naive Bayes": 0.647887323943662,
+        "Gradient Boosting": 0.7323943661971831
+    },
+    "conf_matrices": {
+        "Logistic Regression": [
+            [
+                1,
+                3,
+                1,
+                0
+            ],
+            [
+                0,
+                15,
+                3,
+                3
+            ],
+            [
+                0,
+                5,
+                6,
+                4
+            ],
+            [
+                0,
+                0,
+                2,
+                28
+            ]
+        ],
+        "Random Forest": [
+            [
+                0,
+                2,
+                2,
+                1
+            ],
+            [
+                3,
+                14,
+                3,
+                1
+            ],
+            [
+                1,
+                3,
+                8,
+                3
+            ],
+            [
+                0,
+                0,
+                4,
+                26
+            ]
+        ],
+        "SVM": [
+            [
+                0,
+                3,
+                1,
+                1
+            ],
+            [
+                0,
+                15,
+                5,
+                1
+            ],
+            [
+                0,
+                4,
+                6,
+                5
+            ],
+            [
+                0,
+                0,
+                2,
+                28
+            ]
+        ],
+        "XGBoost": [
+            [
+                1,
+                3,
+                1,
+                0
+            ],
+            [
+                3,
+                16,
+                2,
+                0
+            ],
+            [
+                1,
+                2,
+                10,
+                2
+            ],
+            [
+                0,
+                0,
+                3,
+                27
+            ]
+        ],
+        "Decision Tree": [
+            [
+                0,
+                2,
+                2,
+                1
+            ],
+            [
+                7,
+                11,
+                3,
+                0
+            ],
+            [
+                2,
+                3,
+                6,
+                4
+            ],
+            [
+                0,
+                1,
+                4,
+                25
+            ]
+        ],
+        "Neural Network": [
+            [
+                1,
+                3,
+                1,
+                0
+            ],
+            [
+                1,
+                14,
+                5,
+                1
+            ],
+            [
+                0,
+                5,
+                6,
+                4
+            ],
+            [
+                0,
+                1,
+                5,
+                24
+            ]
+        ],
+        "Naive Bayes": [
+            [
+                1,
+                2,
+                1,
+                1
+            ],
+            [
+                2,
+                13,
+                3,
+                3
+            ],
+            [
+                1,
+                5,
+                5,
+                4
+            ],
+            [
+                0,
+                0,
+                3,
+                27
+            ]
+        ],
+        "Gradient Boosting": [
+            [
+                1,
+                3,
+                1,
+                0
+            ],
+            [
+                3,
+                15,
+                2,
+                1
+            ],
+            [
+                1,
+                3,
+                8,
+                3
+            ],
+            [
+                0,
+                0,
+                2,
+                28
+            ]
+        ]
+    },
+    "reports": {
+        "Logistic Regression": {
+            "0": {
+                "precision": 1.0,
+                "recall": 0.2,
+                "f1-score": 0.3333333333333333,
+                "support": 5.0
+            },
+            "1": {
+                "precision": 0.6521739130434783,
+                "recall": 0.7142857142857143,
+                "f1-score": 0.6818181818181818,
+                "support": 21.0
+            },
+            "2": {
+                "precision": 0.5,
+                "recall": 0.4,
+                "f1-score": 0.4444444444444444,
+                "support": 15.0
+            },
+            "3": {
+                "precision": 0.8,
+                "recall": 0.9333333333333333,
+                "f1-score": 0.8615384615384616,
+                "support": 30.0
+            },
+            "accuracy": 0.704225352112676,
+            "macro avg": {
+                "precision": 0.7380434782608696,
+                "recall": 0.5619047619047619,
+                "f1-score": 0.5802836052836053,
+                "support": 71.0
+            },
+            "weighted avg": {
+                "precision": 0.7069810165339866,
+                "recall": 0.704225352112676,
+                "f1-score": 0.6830657605305492,
+                "support": 71.0
+            }
+        },
+        "Random Forest": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 5.0
+            },
+            "1": {
+                "precision": 0.7368421052631579,
+                "recall": 0.6666666666666666,
+                "f1-score": 0.7,
+                "support": 21.0
+            },
+            "2": {
+                "precision": 0.47058823529411764,
+                "recall": 0.5333333333333333,
+                "f1-score": 0.5,
+                "support": 15.0
+            },
+            "3": {
+                "precision": 0.8387096774193549,
+                "recall": 0.8666666666666667,
+                "f1-score": 0.8524590163934426,
+                "support": 30.0
+            },
+            "accuracy": 0.676056338028169,
+            "macro avg": {
+                "precision": 0.5115350044941576,
+                "recall": 0.5166666666666666,
+                "f1-score": 0.5131147540983606,
+                "support": 71.0
+            },
+            "weighted avg": {
+                "precision": 0.6717436346833623,
+                "recall": 0.676056338028169,
+                "f1-score": 0.6728700069268067,
+                "support": 71.0
+            }
+        },
+        "SVM": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 5.0
+            },
+            "1": {
+                "precision": 0.6818181818181818,
+                "recall": 0.7142857142857143,
+                "f1-score": 0.6976744186046512,
+                "support": 21.0
+            },
+            "2": {
+                "precision": 0.42857142857142855,
+                "recall": 0.4,
+                "f1-score": 0.41379310344827586,
+                "support": 15.0
+            },
+            "3": {
+                "precision": 0.8,
+                "recall": 0.9333333333333333,
+                "f1-score": 0.8615384615384616,
+                "support": 30.0
+            },
+            "accuracy": 0.6901408450704225,
+            "macro avg": {
+                "precision": 0.4775974025974026,
+                "recall": 0.5119047619047619,
+                "f1-score": 0.49325149589784717,
+                "support": 71.0
+            },
+            "weighted avg": {
+                "precision": 0.6302359612218766,
+                "recall": 0.6901408450704225,
+                "f1-score": 0.6578058195574037,
+                "support": 71.0
+            }
+        },
+        "XGBoost": {
+            "0": {
+                "precision": 0.2,
+                "recall": 0.2,
+                "f1-score": 0.2,
+                "support": 5.0
+            },
+            "1": {
+                "precision": 0.7619047619047619,
+                "recall": 0.7619047619047619,
+                "f1-score": 0.7619047619047619,
+                "support": 21.0
+            },
+            "2": {
+                "precision": 0.625,
+                "recall": 0.6666666666666666,
+                "f1-score": 0.6451612903225806,
+                "support": 15.0
+            },
+            "3": {
+                "precision": 0.9310344827586207,
+                "recall": 0.9,
+                "f1-score": 0.9152542372881356,
+                "support": 30.0
+            },
+            "accuracy": 0.7605633802816901,
+            "macro avg": {
+                "precision": 0.6294848111658456,
+                "recall": 0.6321428571428571,
+                "f1-score": 0.6305800723788695,
+                "support": 71.0
+            },
+            "weighted avg": {
+                "precision": 0.7648737251092763,
+                "recall": 0.7605633802816901,
+                "f1-score": 0.7624654432884899,
+                "support": 71.0
+            }
+        },
+        "Decision Tree": {
+            "0": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 5.0
+            },
+            "1": {
+                "precision": 0.6470588235294118,
+                "recall": 0.5238095238095238,
+                "f1-score": 0.5789473684210527,
+                "support": 21.0
+            },
+            "2": {
+                "precision": 0.4,
+                "recall": 0.4,
+                "f1-score": 0.4,
+                "support": 15.0
+            },
+            "3": {
+                "precision": 0.8333333333333334,
+                "recall": 0.8333333333333334,
+                "f1-score": 0.8333333333333334,
+                "support": 30.0
+            },
+            "accuracy": 0.5915492957746479,
+            "macro avg": {
+                "precision": 0.47009803921568627,
+                "recall": 0.4392857142857143,
+                "f1-score": 0.4530701754385965,
+                "support": 71.0
+            },
+            "weighted avg": {
+                "precision": 0.6280033140016571,
+                "recall": 0.5915492957746479,
+                "f1-score": 0.6078576723498889,
+                "support": 71.0
+            }
+        },
+        "Neural Network": {
+            "0": {
+                "precision": 0.5,
+                "recall": 0.2,
+                "f1-score": 0.2857142857142857,
+                "support": 5.0
+            },
+            "1": {
+                "precision": 0.6086956521739131,
+                "recall": 0.6666666666666666,
+                "f1-score": 0.6363636363636364,
+                "support": 21.0
+            },
+            "2": {
+                "precision": 0.35294117647058826,
+                "recall": 0.4,
+                "f1-score": 0.375,
+                "support": 15.0
+            },
+            "3": {
+                "precision": 0.8275862068965517,
+                "recall": 0.8,
+                "f1-score": 0.8135593220338984,
+                "support": 30.0
+            },
+            "accuracy": 0.6338028169014085,
+            "macro avg": {
+                "precision": 0.5723057588852632,
+                "recall": 0.5166666666666666,
+                "f1-score": 0.527659311027955,
+                "support": 71.0
+            },
+            "weighted avg": {
+                "precision": 0.6394973598536275,
+                "recall": 0.6338028169014085,
+                "f1-score": 0.6313237669468273,
+                "support": 71.0
+            }
+        },
+        "Naive Bayes": {
+            "0": {
+                "precision": 0.25,
+                "recall": 0.2,
+                "f1-score": 0.2222222222222222,
+                "support": 5.0
+            },
+            "1": {
+                "precision": 0.65,
+                "recall": 0.6190476190476191,
+                "f1-score": 0.6341463414634146,
+                "support": 21.0
+            },
+            "2": {
+                "precision": 0.4166666666666667,
+                "recall": 0.3333333333333333,
+                "f1-score": 0.37037037037037035,
+                "support": 15.0
+            },
+            "3": {
+                "precision": 0.7714285714285715,
+                "recall": 0.9,
+                "f1-score": 0.8307692307692308,
+                "support": 30.0
+            },
+            "accuracy": 0.647887323943662,
+            "macro avg": {
+                "precision": 0.5220238095238096,
+                "recall": 0.513095238095238,
+                "f1-score": 0.5143770412063096,
+                "support": 71.0
+            },
+            "weighted avg": {
+                "precision": 0.6238430583501007,
+                "recall": 0.647887323943662,
+                "f1-score": 0.6324903769081027,
+                "support": 71.0
+            }
+        },
+        "Gradient Boosting": {
+            "0": {
+                "precision": 0.2,
+                "recall": 0.2,
+                "f1-score": 0.2,
+                "support": 5.0
+            },
+            "1": {
+                "precision": 0.7142857142857143,
+                "recall": 0.7142857142857143,
+                "f1-score": 0.7142857142857143,
+                "support": 21.0
+            },
+            "2": {
+                "precision": 0.6153846153846154,
+                "recall": 0.5333333333333333,
+                "f1-score": 0.5714285714285714,
+                "support": 15.0
+            },
+            "3": {
+                "precision": 0.875,
+                "recall": 0.9333333333333333,
+                "f1-score": 0.9032258064516129,
+                "support": 30.0
+            },
+            "accuracy": 0.7323943661971831,
+            "macro avg": {
+                "precision": 0.6011675824175824,
+                "recall": 0.5952380952380953,
+                "f1-score": 0.5972350230414747,
+                "support": 71.0
+            },
+            "weighted avg": {
+                "precision": 0.7250812567713977,
+                "recall": 0.7323943661971831,
+                "f1-score": 0.7277211657039008,
+                "support": 71.0
+            }
+        }
+    },
+    "feature_names": [
+        "How many employees does your company or organization have?",
+        "Is your primary role within your company related to tech/IT?",
+        "Do you know the options for mental health care available under your employer-provided health coverage?",
+        "Have you ever discussed your mental health with your employer?",
+        "Have you ever discussed your mental health with coworkers?",
+        "Have you had a mental health disorder in the past?",
+        "Have you ever sought treatment for a mental health disorder from a mental health professional?",
+        "Do you have a family history of mental illness?",
+        "If you have a mental health disorder, how often do you feel that it interferes with your work *when being treated effectively?*",
+        "If you have a mental health disorder, how often do you feel that it interferes with your work *when* _*NOT*_* being treated effectively (i.e., when you are experiencing symptoms)?*",
+        "Why or why not?.1",
+        "Have you observed or experienced an *unsupportive or badly handled response* to a mental health issue in your current or previous workplace?"
+    ]
+}
