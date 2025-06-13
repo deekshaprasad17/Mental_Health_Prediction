@@ -45,7 +45,6 @@ This project uses machine learning to predict the likelihood of mental health di
   - Precision
   - Recall
   - F1-Score
-  - ROC-AUC Score
 
 ---
 
@@ -70,8 +69,8 @@ This project uses machine learning to predict the likelihood of mental health di
 
 ## 📊 Results
 
-- The best-performing model was **[insert model name]**.
-- Achieved an accuracy of **[insert accuracy]%** and ROC-AUC of **[insert AUC score]**.
+- The best-performing model was XGBoost.
+- Achieved an accuracy of 76.06%.
 - Top predictive factors included:
   - Previous mental health diagnosis
   - Employer support and openness
@@ -81,7 +80,6 @@ This project uses machine learning to predict the likelihood of mental health di
 
 ## 🚀 Future Work
 
-- Deploy the model via a web app or chatbot interface
 - Update the dataset with more recent responses
 - Integrate deep learning techniques
 - Ensure fairness and reduce prediction bias
